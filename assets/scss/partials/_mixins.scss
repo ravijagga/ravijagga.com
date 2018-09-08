@@ -1,0 +1,7 @@
+@mixin gradient-background {
+    background: linear-gradient(120deg, rgba($gradient-color-1, 1), rgba($gradient-color-2, 1));
+}
+
+@mixin gradient-background-important {
+    background: linear-gradient(120deg, rgba($gradient-color-1, 1), rgba($gradient-color-2, 1)) !important;
+}

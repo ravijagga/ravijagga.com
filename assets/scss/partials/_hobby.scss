@@ -1,0 +1,11 @@
+.hobby-col {
+	text-align: center;
+	visibility: hidden;
+	.hobby-thumb {
+		margin-bottom: 20px;
+		img {
+			width: 75px;
+		    height: 75px;
+		}
+	}
+}

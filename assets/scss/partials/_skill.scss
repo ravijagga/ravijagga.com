@@ -1,0 +1,47 @@
+.skill-section {
+	.round-thumb {
+		background: #CCCCCC;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	.percentage-circle {
+		text-align: center;
+		.c100 {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			visibility: hidden;
+		}
+	}
+}
+
+
+/* Percentage Circle Bar Colour Change */
+%circle-border-color {
+	width: 1em !important;
+    height: 1em !important;
+    border: none !important;
+    @include gradient-background;
+}
+
+@for $i from 51 through 99 {
+	pie, .c100 .bar, .c100.p#{$i} .fill, .c100.p100 .fill {
+		@extend %circle-border-color;
+	}
+}
+
+.c100 {	
+	background-color: rgba(black, 0.05) !important;
+ 	span, &:hover span {
+		@include gradient-background;
+	  	-webkit-background-clip: text;
+	  	-webkit-text-fill-color: transparent;
+	}
+	&:after {
+		background-color: $light-gray !important;
+	}
+}
+
+/* End Percentage Circle Bar Colour Change */

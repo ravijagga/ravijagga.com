@@ -1,0 +1,22 @@
+.project-section {
+	.single-project {
+		margin-bottom: 50px;
+		visibility: hidden;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		h4 {
+			word-break: break-all;
+		}
+		a {
+			color: $gradient-color-1;
+			&:hover {
+				color: $gradient-color-2;
+				text-decoration: none;
+			}
+		}
+		ul {
+			color: #777;
+		}
+	}
+}

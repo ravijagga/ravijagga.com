@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+// Bootstrap & Browser Default outline reset
+*:focus {
+    outline: none;
+}
+button:focus, .form-control:focus, .btn:focus, .btn-primary:focus {
+  outline: none !important;
+  border-color: inherit !important;
+  box-shadow: none !important;
+}
+
+.page-section {
+	padding: 70px 0;
+	overflow: hidden;
+	&:nth-child(even) {
+		background: $light-gray;
+	}
+	h2 {
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+	h4, h6 {
+			color: #555;
+	}
+	p {
+			color: #777;
+	}
+	.animated {
+		visibility: visible !important;
+	}
+}
+

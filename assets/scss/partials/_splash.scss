@@ -1,0 +1,201 @@
+.splash-section {
+	height: 100vh;
+	min-height: 500px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMUHYaAwPDLBgHLAYAEA0BBLeZzU0AAAAASUVORK5CYII=), linear-gradient(120deg, rgba($gradient-color-1, 0.9), rgba($gradient-color-2, 0.9)), url('../img/splash_bg_5_1600_30.jpg');
+	@media all and (max-width: $large-screen) {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMUHYaAwPDLBgHLAYAEA0BBLeZzU0AAAAASUVORK5CYII=), linear-gradient(120deg, rgba($gradient-color-1, 0.9), rgba($gradient-color-2, 0.9)), url('../img/splash_bg_5_1200_30.jpg');
+	}
+	@media all and (max-width: $small-screen) {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMUHYaAwPDLBgHLAYAEA0BBLeZzU0AAAAASUVORK5CYII=), linear-gradient(120deg, rgba($gradient-color-1, 0.9), rgba($gradient-color-2, 0.9)), url('../img/splash_bg_5_800_30.jpg');
+		background-position: center center;
+	background-size: auto, auto, cover;
+	background-repeat: repeat, no-repeat, no-repeat;
+	}
+	@media all and (max-width: $extra-small-screen) {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQYV2NkQAKMUHYaAwPDLBgHLAYAEA0BBLeZzU0AAAAASUVORK5CYII=), linear-gradient(120deg, rgba($gradient-color-1, 0.9), rgba($gradient-color-2, 0.9)), url('../img/splash_bg_5_500_30.jpg');
+		background-position: center center;
+	background-size: auto, auto, cover;
+	background-repeat: repeat, no-repeat, no-repeat;
+	}
+	background-position: center center;
+	background-size: auto, auto, cover;
+	background-repeat: repeat, no-repeat, no-repeat;
+	#particles-js {
+		position: absolute;
+	    width: 100%;
+	    height: 100vh;
+	    top: 0;
+	}
+	.container {
+		pointer-events: none;
+	}
+	.main-nav {
+		// background: $blue;
+		position: relative;
+		margin-top: -70px;
+	    padding-top: 15px;
+	    @media all and (max-width: $medium-screen) {
+	    	display: none;
+	    }
+		ul {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			li {
+				list-style-type: none;
+				display: inline-block;
+				margin: 0 20px;
+				a {
+					color: white;
+					text-transform: uppercase;
+					font-weight: 600;
+					pointer-events: auto;
+					&:hover {
+						color: darken(white, 5%);
+					}
+				}
+			}
+		}
+	}
+	.intro-container {
+		// border: 1px solid white;
+		color: white;
+		display: table;
+		padding: 15px 250px;
+		margin: calc(50vh - 70px) auto 0 auto;
+		transform: translate(0, -160px);
+		@media all and (max-width: $large-screen) {
+			padding: 15px 160px;
+		}
+		@media all and (max-width: $medium-screen) {
+			transform: translate(0, -230px);
+			padding: 15px 128px;
+		}
+		@media all and (max-width: $small-screen) {
+			padding: 15px 80px;
+			transform: translate(0, -200px);
+		}
+		@media all and (max-width: $extra-small-screen) {
+			padding: 15px 0px;
+			transform: translate(0, -180px);
+		}
+		.round-img {
+			background: $light-gray;
+			background-image: url('../img/my_avatar_150px_91.jpg');
+			width: 150px;
+			height: 150px;
+			@media all and (max-width: $extra-small-screen) {
+				width: 100px;
+				height: 100px;
+				margin-bottom: 30px;
+			}
+			margin: 0 auto 40px auto;
+			background-size: cover;
+			border-radius: 100%;
+			border: 5px solid #fff;
+			visibility: hidden;
+		}
+		h1.typed {
+			font-size: 3.0em;
+		    margin: -7px 0 0 0;
+		    text-align: center;
+		    line-height: 1.5em;
+		    font-weight: 400;
+			@media all and (max-width: $medium-screen) {
+				font-size: 2.5em;
+			}
+			@media all and (max-width: $small-screen) {
+				font-size: 2em;
+			}
+			@media all and (max-width: $extra-small-screen) {
+				font-size: 1.8em;
+			}
+			&:after {
+				content: '|';
+				display: inline;
+				animation: blink 0.7s infinite;
+			}
+			span {
+				font-size: 1.1em;
+    			font-weight: 600;
+			}
+		}
+		.typed-cursor {
+			opacity: 0;
+			display: none;
+		}
+	}
+	.scroll-down {
+	    position: absolute;
+	    margin-left: 50%;
+	    transform: translate(-50%, 0);
+	    left: 0;
+	    bottom: 5%;
+	    color: white;
+	    font-size: 1.1em;
+	    &:hover {
+	    	color: white;
+	    	text-decoration: none;
+	    }
+	    p {
+	    	color: white;
+	    	text-align: center;
+	    	pointer-events: auto;
+	    	@media all and (max-width: $extra-small-screen) {
+		    	display: none;
+		    }
+	    }
+		.scroll-down-icon {
+		  opacity: 1;
+		  transition: all .5s ease-in 3s;
+		}
+		.scroll-down-icon {
+		    display: block;
+		    width: 32px;
+		    height: 32px;
+		    border: 2px solid #FFF;
+		    background-size: 14px auto;
+		    border-radius: 50%;
+		    animation: bounce 2s infinite 2s;
+		    transition: all .2s ease-in;
+		    margin: 0 auto;
+		    pointer-events: auto;
+			&:before {
+				position: absolute;
+			    top: calc(50% - 8px);
+			    left: calc(50% - 6px);
+			    transform: rotate(-45deg);
+			    display: block;
+			    width: 12px;
+			    height: 12px;
+			    content: "";
+			    border: 2px solid white;
+			    border-width: 0px 0 2px 2px;
+			}
+		}
+	}
+}
+
+/* scroll-down-icon bounce animation */
+@keyframes bounce {
+	0%,
+	100%,
+	20%,
+	50%,
+	80% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-10px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
+}
+
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

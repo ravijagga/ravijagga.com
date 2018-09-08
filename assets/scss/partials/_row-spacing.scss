@@ -1,0 +1,38 @@
+.row-spacing + .row-spacing {
+	margin-top: 50px;
+}
+
+.skill-section {
+	.row-spacing {
+		// @media only screen and (max-width: $medium-screen) {
+		// 	/*===== 3 columns =====*/
+		// 	[class*="col-"] + [class*="col-"] + [class*="col-"] + [class*="col-"] {
+		// 		margin-top: 50px;
+		// 	}
+		// }
+		@media only screen and (max-width: $small-screen) {
+			/*===== 2 columns =====*/
+			[class*="col-"] + [class*="col-"] + [class*="col-"] {
+				margin-top: 50px;
+			}
+		}
+		@media only screen and (max-width: $extra-small-screen) {
+			/*===== 1 column =====*/
+			[class*="col-"] + [class*="col-"] {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+
+.qualification-section, .hobby-section {
+	.row-spacing {
+		@media only screen and (max-width: $small-screen) {
+			/*===== 1 column =====*/
+			[class*="col-"] + [class*="col-"] {
+				margin-top: 50px;
+			}
+		}
+	}
+}
